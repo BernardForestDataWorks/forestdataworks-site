@@ -1,0 +1,21 @@
+# Hugo generated files
+resources/_gen/
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+*~
+
+# IDE settings
+.vscode/
+.idea/
+
+# Secrets (future-proofing)
+.env
+*.key
+*.pem
+*.crt
+
+# Local scratch space
+drafts/
+private/
