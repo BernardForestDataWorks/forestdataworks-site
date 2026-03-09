@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ with .Params.banner }}
+<div class="container pt-3">
+  <div class="row">
+    <div class="col-12">
+      <div class="fdw-bannerstrip">
+        <img src="{{ . }}" alt="{{ $.Title }} banner">
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<div class="container pt-3">
+  <div class="row">
+    <div class="col-12">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+{{ end }}

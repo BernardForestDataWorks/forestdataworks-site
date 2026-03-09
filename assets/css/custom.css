@@ -1,0 +1,28 @@
+/* Main footer background */
+footer,
+.footer {
+  background-color: #663300 !important;   /* brown (nav link color) */
+  color: #ffffff !important;
+}
+
+/* Footer links */
+footer a,
+.footer a {
+  color: #ffffff !important;
+}
+
+footer a:hover,
+.footer a:hover {
+  color: #e6e6e6 !important;
+}
+
+/* Darker bottom bar */
+footer .subfooter,
+.footer .subfooter,
+footer .copyright,
+.footer .copyright,
+footer .footer-bottom,
+.footer .footer-bottom {
+  background-color: #195905 !important;   /* Lincoln green */
+}
+

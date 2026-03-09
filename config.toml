@@ -1,0 +1,48 @@
+baseURL = "https://forestdata.works/"
+languageCode = "en-us"
+title = "Forest Data Works, LLC"
+theme = "serif"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  homepage_intro = "Forest Data Works provides analytical, geospatial, and decision-support tools for forest management, conservation planning, and applied research."
+  homepage_show_call_box = false
+  custom_css = ["css/custom.css"]
+  [params.fonts]
+    base = "Inter"
+    heading = "Inter"
+
+[params.logo]
+  alt = "Forest Data Works"
+  desktop = "images/logo/fdw-logo.png"
+  desktop_height = "65"
+  mobile = "images/logo/fdw-logo.png"
+  mobile_height = "55"
+
+
+[menu]
+
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Media"
+    url = "/media/"
+    weight = 2
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,5 +1,7 @@
 # Hugo generated files
 resources/_gen/
+/public
+.hugo_build.lock
 
 # OS / editor clutter
 .DS_Store
@@ -15,6 +17,12 @@ Thumbs.db
 *.key
 *.pem
 *.crt
+
+# R/RStudio artifacts
+.Rhistory
+.RData
+.Rproj.user
+.Ruserdata
 
 # Local scratch space
 drafts/

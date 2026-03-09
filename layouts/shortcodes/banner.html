@@ -1,0 +1,12 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $img := .Page.Resources.GetMatch $src -}}
+
+{{- if not $img -}}
+  <p><strong>Banner image not found:</strong> {{ $src }}</p>
+{{- else -}}
+  {{- $banner := $img.Fill "1600x400 center" -}}
+  <div class="page-banner">
+    <img src="{{ $banner.RelPermalink }}" alt="{{ $alt }}">
+  </div>
+{{- end -}}

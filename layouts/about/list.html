@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+{{ with .Params.banner }}
+<div class="container pt-3">
+  <div class="row">
+    <div class="col-12">
+      <div class="fdw-bannerstrip">
+        <img src="{{ . }}" alt="{{ $.Title }} banner">
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<div class="container pt-3">
+  <div class="about-split">
+    {{/* Put your photo first (or second) depending on your preference */}}
+    {{ with .Params.photo }}
+      <img class="about-photo" src="{{ . }}" alt="{{ $.Title }} photo">
+    {{ end }}
+
+    <div class="about-text">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+<div class="container pt-6 pb-md-12">
+  <div class="row">
+    {{ range .Pages.ByWeight }}
+    <div class="col-12 col-md-6 mb-2">{{ .Render "summary" }}</div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
