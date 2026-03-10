@@ -135,6 +135,153 @@ footer *,
 }
 
 /* ===================================== */
+/* Mobile Header                         */
+/* ===================================== */
+
+@media (max-width: 767.98px) {
+  .header {
+    position: relative !important;
+    z-index: 1002 !important;
+  }
+
+  .header .container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  /* show only one logo on mobile/tablet widths */
+  .logo {
+    display: none !important;
+  }
+
+  .logo-mobile {
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .logo-mobile a {
+    display: inline-block !important;
+  }
+
+  .logo-mobile img {
+    display: block !important;
+    height: 55px !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  /* hide desktop text menu on mobile */
+  .main-menu {
+    display: none !important;
+  }
+
+  /* centered hamburger below logo */
+  #toggle-main-menu-mobile {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    margin: 0 !important;
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    z-index: 1003 !important;
+    background: #ffffff !important;
+    border: 2px solid #663300 !important;
+    border-radius: 6px !important;
+  }
+
+  #toggle-main-menu-mobile .hamburger-box {
+    width: 36px !important;
+    height: 24px !important;
+    display: block !important;
+    position: relative !important;
+  }
+
+  #toggle-main-menu-mobile .hamburger-inner,
+  #toggle-main-menu-mobile .hamburger-inner::before,
+  #toggle-main-menu-mobile .hamburger-inner::after {
+    background-color: #663300 !important;
+    width: 36px !important;
+    height: 4px !important;
+    border-radius: 2px !important;
+    opacity: 1 !important;
+  }
+
+  #toggle-main-menu-mobile.is-active {
+    background: #663300 !important;
+  }
+
+  #toggle-main-menu-mobile.is-active .hamburger-inner,
+  #toggle-main-menu-mobile.is-active .hamburger-inner::before,
+  #toggle-main-menu-mobile.is-active .hamburger-inner::after {
+    background-color: #ffffff !important;
+  }
+}
+
+/* restore normal desktop behavior */
+@media (min-width: 768px) {
+  .logo {
+    display: block !important;
+  }
+
+  .logo-mobile {
+    display: none !important;
+  }
+
+  .main-menu {
+    display: block !important;
+  }
+
+  #toggle-main-menu-mobile {
+    display: none !important;
+  }
+}
+
+/* ===================================== */
+/* Mobile Menu Overlay                   */
+/* ===================================== */
+
+#main-menu-mobile {
+  background-color: #195905 !important;  /* your dark green */
+}
+
+#main-menu-mobile ul li a {
+  color: #ffffff !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+#main-menu-mobile ul li a:hover {
+  color: #f0f0f0 !important;
+}
+
+#main-menu-mobile ul {
+  margin-top: 120px;
+  text-align: center;
+}
+
+#main-menu-mobile ul li {
+  padding: 12px 0;
+}
+
+#main-menu-mobile ul li a {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+/* ===================================== */
 /* Footer Colors + Font                  */
 /* ===================================== */
 
