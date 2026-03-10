@@ -9,8 +9,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   homepage_show_call_box = false
   custom_css = ["css/custom.css"]
   [params.fonts]
-    base = "Inter"
-    heading = "Inter"
+    base = "Montserrat"
+    heading = "Montserrat"
 
 [params.logo]
   alt = "Forest Data Works"

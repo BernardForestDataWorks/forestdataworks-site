@@ -3,13 +3,10 @@
 {{- $alt := .Get "alt" | default "" -}}
 {{- $class := .Get "class" | default "" -}}
 
-{{- $img := .Page.Resources.GetMatch $src -}}
-{{- if not $img -}}
-  <p><strong>squareimg shortcode:</strong> could not find image '{{ $src }}' in this page bundle.</p>
+{{- if not $src -}}
+  <p><strong>squareimg shortcode:</strong> missing required parameter 'src'.</p>
 {{- else -}}
-  {{- /* 700x700 is a good thumb size; adjust if you want */ -}}
-  {{- $thumb := $img.Fill "700x700 Center" -}}
-  <a href="{{ $img.Permalink }}" class="fdw-lightbox-link {{ $class }}" data-lightbox="image" aria-label="Open image">
-    <img src="{{ $thumb.Permalink }}" alt="{{ $alt }}" loading="lazy" decoding="async" class="fdw-square-img">
+  <a href="{{ $src | relURL }}" class="fdw-lightbox-link {{ $class }}" data-lightbox="image" aria-label="Open image">
+    <img src="{{ $src | relURL }}" alt="{{ $alt }}" loading="lazy" decoding="async" class="fdw-square-img">
   </a>
 {{- end -}}

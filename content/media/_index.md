@@ -1,6 +1,6 @@
 ---
 title: "Sample Media"
-banner: "/images/media-banner.jpg"
+banner: "/images/media/banner-media.jpg"
 ---
 
 <div class="fdw-media-page">

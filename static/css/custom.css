@@ -4,7 +4,7 @@
 
 html, body {
   overflow-x: hidden;
-  font-family: "Sawasdee", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body,
@@ -95,7 +95,7 @@ footer,
 .footer {
   background-color: #663300 !important;
   color: #ffffff !important;
-  font-family: "Sawasdee", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 footer .container,
@@ -106,7 +106,7 @@ footer [class*="footer"],
 .footer [class*="footer"] {
   background-color: transparent !important;
   color: inherit !important;
-  font-family: "Sawasdee", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 footer a:link,
@@ -142,7 +142,7 @@ footer a:focus {
 .sub-footer small {
   background-color: #195905 !important;
   color: #ffffff !important;
-  font-family: "Sawasdee", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .sub-footer {
@@ -168,7 +168,7 @@ footer a:focus {
 .fdw-media-card h3,
 .fdw-service-card h3,
 .fdw-card h3 {
-  font-family: "Sawasdee", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 700 !important;
 }
 
@@ -193,15 +193,16 @@ footer a:focus {
   overflow: hidden;
   margin: 0 0 1.25rem 0;
   border-radius: 6px;
+  position: relative;
 }
 
 .fdw-bannerstrip img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 40% !important;
   display: block;
-}
+ }
 
 
 /* ===================================== */
@@ -315,7 +316,7 @@ footer a:focus {
   font-size: clamp(2.0rem, 4.2vw, 2.8rem);
   font-weight: 650;
   margin: 0 0 1rem 0;
-  font-family: "Sawasdee", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .fdw-tagline {
